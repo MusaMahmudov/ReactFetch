@@ -1,0 +1,33 @@
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & .container {
+    margin: auto;
+    width: 600px;
+
+    & ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      & li {
+        & button {
+          padding: 6px 20px;
+          background: black;
+          color: white;
+          font-size: 20px;
+          border: none;
+          transition: 0.4s;
+          &:hover {
+            background: green;
+          }
+        }
+      }
+    }
+  }
+}
